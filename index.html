@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suzana Azad & M. Mushfiqur Rahman (Shovon) | Wedding Celebration</title>
+  <meta name="description" content="Wedding celebration of Suzana Azad and M. Mushfiqur Rahman (Shovon) on Saturday, December 26, 2026 at 2:00 PM at Fatema Community Centre, Magura." />
+  <meta property="og:title" content="Suzana & Mushfiqur's Wedding Celebration" />
+  <meta property="og:description" content="Celebrate the wedding of Suzana & Shovon. Saturday, December 26, 2026 · 2:00 PM at Fatema Community Centre, Magura." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts: Great Vibes, Cormorant Garamond, Amiri (Arabic), Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            maroon: {
+              DEFAULT: '#5A121D',
+              deep: '#350810',
+              rich: '#4A0D17',
+              light: '#781A28',
+              50: '#FDF5F6',
+              100: '#F7DFE3'
+            },
+            champagne: {
+              DEFAULT: '#D4AF37',
+              light: '#F5E4A2',
+              mirror: '#FFE68F',
+              dark: '#9E7D17',
+              50: '#FBF9F0',
+              100: '#F7F1D8',
+              200: '#EEDFA8'
+            },
+            parchment: {
+              DEFAULT: '#FDFBF7',
+              cream: '#FAF6EE',
+              sand: '#F3EDE2',
+              border: '#E8DECE'
+            },
+            charcoal: {
+              DEFAULT: '#262122',
+              light: '#473E40',
+              muted: '#6E6466'
+            }
+          },
+          fontFamily: {
+            script: ['"Great Vibes"', 'cursive'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            arabic: ['"Amiri"', 'serif'],
+            sans: ['"Montserrat"', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            'gold-emboss': '0 4px 20px -2px rgba(212, 175, 55, 0.25)',
+            'velvet-depth': '0 20px 40px -10px rgba(53, 8, 16, 0.35)',
+            'card-soft': '0 10px 30px -5px rgba(44, 44, 44, 0.06)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --color-maroon: #5A121D;
+      --color-gold: #D4AF37;
+      --color-parchment: #FDFBF7;
+      --color-charcoal: #262122;
+    }
+
+    body {
+      background-color: #FDFBF7;
+      color: #262122;
+      font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background-color: rgba(212, 175, 55, 0.35);
+      color: #5A121D;
+    }
+
+    .font-script {
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .font-serif {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+
+    .font-arabic {
+      font-family: 'Amiri', serif;
+    }
+
+    /* Velvet backdrop effect */
+    .bg-velvet {
+      background: radial-gradient(circle at 50% 30%, #6E1624 0%, #4A0D17 60%, #2D050B 100%);
+    }
+
+    /* 3D Gold Foil / Mirror Text Effect */
+    .gold-foil-text {
+      background: linear-gradient(135deg, #FFE89C 0%, #D4AF37 35%, #FFF2BE 50%, #B8891B 80%, #E6C458 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .glass-nav {
+      background: rgba(253, 251, 247, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    /* Reveal animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Custom subtle scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FDFBF7;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D4AF37;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #5A121D;
+    }
+  </style>
+</head>
+<body class="antialiased text-charcoal bg-parchment">
+
+  <!-- Gentle Continuous Love Emoji & Celebration Confetti Canvas -->
+  <canvas id="loveConfettiCanvas" class="fixed inset-0 pointer-events-none z-30 w-full h-full"></canvas>
+
+  <!-- Sticky Luxury Navigation Bar -->
+  <header id="mainNav" class="fixed top-0 inset-x-0 z-40 transition-all duration-300 glass-nav border-b border-champagne/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Wordmark & Monogram Emblem -->
+      <a href="#hero" class="flex items-center gap-3 group text-left">
+        <div class="w-11 h-11 rounded-full bg-maroon border-2 border-champagne flex items-center justify-center shadow-sm transition-transform group-hover:scale-105">
+          <span class="font-script text-2xl text-champagne-light pt-1">S&amp;S</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-lg sm:text-xl font-bold tracking-wide text-maroon leading-tight">Shovon &amp; Suzana</span>
+          <span class="text-[10px] tracking-[0.2em] uppercase text-charcoal-muted font-medium">Saturday, Dec 26, 2026 · 2:00 PM</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-widest font-semibold text-charcoal-light">
+        <a href="#hero" class="hover:text-maroon transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-champagne after:absolute after:bottom-0 after:left-0 after:transition-all">Home</a>
+        <a href="#countdown" class="hover:text-maroon transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-champagne after:absolute after:bottom-0 after:left-0 after:transition-all">Countdown</a>
+        <a href="#venue" class="hover:text-maroon transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-champagne after:absolute after:bottom-0 after:left-0 after:transition-all">Venue &amp; Location</a>
+      </nav>
+
+      <!-- Action Items: Shower Toggle + Audio Chime + Open Map Action -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Love Emoji & Celebration Shower Toggle Button -->
+        <button id="showerToggleBtn" title="Toggle love & confetti shower" aria-label="Toggle love & confetti shower" class="w-9 h-9 rounded-full border border-champagne/50 flex items-center justify-center text-maroon hover:text-white hover:bg-maroon hover:border-maroon bg-white transition-all text-xs shadow-sm" aria-pressed="true">
+          <span id="showerIcon">💖</span>
+        </button>
+
+        <!-- Ambient Melody Synthesizer Toggle -->
+        <button id="audioToggleBtn" title="Play ambient wedding melody" aria-label="Toggle ambient melody" class="w-9 h-9 rounded-full border border-champagne/50 flex items-center justify-center text-maroon hover:text-white hover:bg-maroon hover:border-maroon bg-white transition-all text-xs shadow-sm">
+          <span id="audioIcon">🎵</span>
+        </button>
+
+        <!-- Directions CTA -->
+        <a href="#venue" class="hidden sm:inline-flex items-center justify-center px-5 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-maroon hover:bg-maroon-light active:bg-maroon-deep rounded-full transition-all border border-champagne/40 shadow-sm hover:shadow-gold-emboss transform hover:-translate-y-0.5">
+          View Venue
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button id="mobileMenuBtn" aria-label="Open navigation menu" class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-maroon/20 text-maroon focus:outline-none">
+          <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+          <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="md:hidden hidden bg-parchment/98 border-b border-champagne/30 px-6 py-6 space-y-4 shadow-xl">
+      <div class="flex flex-col space-y-3 text-sm font-semibold tracking-wider uppercase text-charcoal">
+        <a href="#hero" class="mobile-nav-link py-2 border-b border-champagne/15 hover:text-maroon">Home</a>
+        <a href="#countdown" class="mobile-nav-link py-2 border-b border-champagne/15 hover:text-maroon">Countdown</a>
+        <a href="#venue" class="mobile-nav-link py-2 hover:text-maroon">Venue &amp; Location</a>
+      </div>
+      <div class="pt-2">
+        <a href="https://maps.app.goo.gl/5kRQBm8jHUVdCp9D7" target="_blank" rel="noopener noreferrer" class="mobile-nav-link block text-center w-full py-3 text-xs font-semibold uppercase tracking-widest text-white bg-maroon rounded-lg shadow-sm">
+          Open Google Maps
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. Hero Section: Velvet Royal Invitation Banner -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center text-center px-4 pt-24 pb-20 overflow-hidden bg-velvet text-white">
+    
+    <!-- Decorative Islamic Arabesque Background Pattern -->
+    <div class="absolute inset-0 opacity-15 mix-blend-overlay pointer-events-none" style="background-image: radial-gradient(#D4AF37 1px, transparent 1px), radial-gradient(#FFE68F 1px, transparent 1px); background-size: 32px 32px; background-position: 0 0, 16px 16px;"></div>
+
+    <!-- Gold Arch Vignette -->
+    <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-maroon-deep to-transparent pointer-events-none"></div>
+    <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-maroon-deep to-transparent pointer-events-none"></div>
+
+    <!-- Hero Content Container -->
+    <div class="relative z-10 max-w-4xl mx-auto px-4 py-8">
+      
+      <!-- Arabic Bismillah Calligraphy (Directly inspired by Nikahnama) -->
+      <div class="mb-4">
+        <p class="font-arabic text-2xl sm:text-4xl text-champagne-mirror drop-shadow-md">
+          بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+        </p>
+        <p class="font-arabic text-lg sm:text-2xl text-champagne-light mt-1">
+          وَخَلَقْنَاكُمْ أَزْوَاجًا
+        </p>
+        <p class="text-[11px] sm:text-xs uppercase tracking-[0.25em] text-champagne-light/90 italic font-serif mt-1">
+          “And We created you in pairs” · Surah An-Naba 78:8
+        </p>
+      </div>
+
+      <!-- Golden Flourish Divider -->
+      <div class="flex items-center justify-center gap-3 my-4">
+        <div class="w-12 sm:w-20 h-px bg-gradient-to-r from-transparent to-champagne"></div>
+        <div class="w-2.5 h-2.5 rotate-45 border border-champagne bg-maroon"></div>
+        <div class="w-12 sm:w-20 h-px bg-gradient-to-l from-transparent to-champagne"></div>
+      </div>
+
+      <!-- Kicker -->
+      <div class="text-xs sm:text-sm uppercase tracking-[0.3em] text-champagne-light mb-2 font-medium">
+        The Next Chapter of Their Journey
+      </div>
+
+      <!-- 3D Gold Script Names (Inspired by Acrylic Calligraphy in photo) -->
+      <div class="my-6">
+        <!-- Calligraphic Acrylic Style: Shovon & Suzana -->
+        <div class="flex items-center justify-center flex-wrap gap-2 sm:gap-4 font-script text-5xl sm:text-7xl md:text-8xl gold-foil-text leading-none py-2">
+          <span>Shovon</span>
+          <span class="inline-flex items-center justify-center mx-2 text-3xl sm:text-5xl text-champagne">
+            <svg class="w-8 h-8 sm:w-12 sm:h-12 inline text-champagne fill-current filter drop-shadow" viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </span>
+          <span>Suzana</span>
+        </div>
+
+        <!-- Full Formal Certificate Names -->
+        <h1 class="font-serif text-xl sm:text-3xl text-parchment tracking-wide font-normal mt-3">
+          M. Mushfiqur Rahman &amp; Suzana Azad
+        </h1>
+      </div>
+
+      <!-- Certification Subtext -->
+      <p class="text-xs sm:text-sm text-parchment-cream/80 max-w-xl mx-auto uppercase tracking-wider font-light">
+        Cordially invite you to celebrate their wedding reception
+      </p>
+
+      <!-- Exact Date & Time Highlight (Saturday, December 26, 2026 · 2:00 PM) -->
+      <div class="inline-block my-6 px-6 py-3 rounded-2xl bg-maroon-deep/70 border border-champagne/40 backdrop-blur-md shadow-velvet-depth">
+        <div class="font-serif text-xl sm:text-3xl text-champagne-mirror font-medium">
+          Saturday, December 26, 2026
+        </div>
+        <div class="text-xs sm:text-sm tracking-[0.25em] uppercase text-parchment mt-1 font-light">
+          2:00 PM 
+        </div>
+      </div>
+
+      <!-- Venue Address -->
+      <p class="text-xs sm:text-sm text-parchment-sand/90 font-light max-w-md mx-auto mb-8">
+        Fatema Community Centre, Magura - Jashore Hwy, Magura 7600
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+        <!-- Direct View Venue / Directions Button -->
+        <a href="#venue" class="w-full sm:w-auto px-8 py-3.5 bg-champagne hover:bg-champagne-light active:bg-champagne-dark text-maroon font-bold text-xs tracking-widest uppercase rounded-full transition-all shadow-lg hover:shadow-gold-emboss transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+          Venue &amp; Location
+        </a>
+
+        <!-- Add to Calendar Dropdown Button -->
+        <div class="relative w-full sm:w-auto" id="calendarDropdownContainer">
+          <button id="addToCalendarBtn" class="w-full sm:w-auto px-6 py-3.5 bg-maroon-deep/80 hover:bg-maroon-deep text-champagne-light font-medium text-xs tracking-widest uppercase rounded-full border border-champagne/40 transition-all flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 text-champagne" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+            Add to Calendar
+          </button>
+
+          <!-- Calendar Dropdown Menu -->
+          <div id="calendarMenu" class="hidden absolute left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0 mt-2 w-56 bg-parchment rounded-xl shadow-2xl py-2 z-50 text-left border border-champagne text-charcoal">
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Suzana+Azad+%26+M.+Mushfiqur+Rahman+(Shovon)+Wedding+Celebration&dates=20261226T080000Z/20261226T140000Z&details=Wedding+Celebration+and+Reception+at+Fatema+Community+Centre%2C+Magura.&location=Fatema+Community+Centre%2C+Magura+-+Jashore+Hwy%2C+Magura+7600" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-2.5 text-xs text-charcoal hover:bg-champagne-50 hover:text-maroon transition-colors">
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+              Google Calendar
+            </a>
+            <a href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Suzana+Azad+%26+M.+Mushfiqur+Rahman+Wedding&startdt=2026-12-26T14:00:00&enddt=2026-12-26T20:00:00&body=Wedding+celebration+at+Fatema+Community+Centre%2C+Magura&location=Fatema+Community+Centre%2C+Magura" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-2.5 text-xs text-charcoal hover:bg-champagne-50 hover:text-maroon transition-colors">
+              <span class="w-2 h-2 rounded-full bg-cyan-700"></span>
+              Outlook Online
+            </a>
+            <button id="downloadIcsBtn" class="w-full flex items-center gap-3 px-4 py-2.5 text-xs text-charcoal hover:bg-champagne-50 hover:text-maroon transition-colors text-left">
+              <span class="w-2 h-2 rounded-full bg-maroon"></span>
+              Download Apple/iCal (.ics)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#countdown" class="inline-flex flex-col items-center mt-12 text-champagne-light/70 hover:text-champagne transition-colors">
+        <span class="text-[10px] tracking-widest uppercase mb-1">Scroll to countdown</span>
+        <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- 2. Live Countdown Section (Maroon & Gold Glassmorphic Card) -->
+  <section id="countdown" class="relative z-20 -mt-10 sm:-mt-14 max-w-4xl mx-auto px-4">
+    <div class="bg-parchment rounded-2xl p-6 sm:p-8 shadow-card-soft text-center border-2 border-champagne relative overflow-hidden">
+      
+      <!-- Delicate corner floral ornaments -->
+      <div class="absolute -top-6 -left-6 w-16 h-16 border-t-2 border-l-2 border-maroon rounded-tl-xl pointer-events-none"></div>
+      <div class="absolute -top-6 -right-6 w-16 h-16 border-t-2 border-r-2 border-maroon rounded-tr-xl pointer-events-none"></div>
+
+      <div class="text-xs uppercase tracking-[0.25em] text-maroon font-bold mb-2">
+        Counting Down to Saturday, December 26, 2026 · 2:00 PM
+      </div>
+      <p class="font-serif text-lg sm:text-xl text-charcoal italic mb-6">
+        Until we celebrate our blessed union in the presence of loved ones
+      </p>
+
+      <!-- 4 Clock Boxes -->
+      <div class="grid grid-cols-4 gap-2 sm:gap-6 max-w-2xl mx-auto">
+        <div class="bg-maroon-50 rounded-xl p-3 sm:p-5 border border-maroon/20 flex flex-col items-center">
+          <span id="daysVal" class="font-serif text-2xl sm:text-4xl md:text-5xl font-bold text-maroon tabular-nums">000</span>
+          <span class="text-[10px] sm:text-xs uppercase tracking-wider text-charcoal-muted mt-1 font-semibold">Days</span>
+        </div>
+        <div class="bg-maroon-50 rounded-xl p-3 sm:p-5 border border-maroon/20 flex flex-col items-center">
+          <span id="hoursVal" class="font-serif text-2xl sm:text-4xl md:text-5xl font-bold text-maroon tabular-nums">00</span>
+          <span class="text-[10px] sm:text-xs uppercase tracking-wider text-charcoal-muted mt-1 font-semibold">Hours</span>
+        </div>
+        <div class="bg-maroon-50 rounded-xl p-3 sm:p-5 border border-maroon/20 flex flex-col items-center">
+          <span id="minutesVal" class="font-serif text-2xl sm:text-4xl md:text-5xl font-bold text-maroon tabular-nums">00</span>
+          <span class="text-[10px] sm:text-xs uppercase tracking-wider text-charcoal-muted mt-1 font-semibold">Minutes</span>
+        </div>
+        <div class="bg-maroon-50 rounded-xl p-3 sm:p-5 border border-maroon/20 flex flex-col items-center">
+          <span id="secondsVal" class="font-serif text-2xl sm:text-4xl md:text-5xl font-bold text-maroon tabular-nums">00</span>
+          <span class="text-[10px] sm:text-xs uppercase tracking-wider text-charcoal-muted mt-1 font-semibold">Seconds</span>
+        </div>
+      </div>
+
+      <!-- Quick Location Badge -->
+      <div class="mt-6 pt-4 border-t border-champagne/30 text-xs text-charcoal-muted flex items-center justify-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-maroon"></span>
+        <span>Fatema Community Centre, Magura - Jashore Hwy, Magura 7600</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Venue & Location Section -->
+  <section id="venue" class="py-20 sm:py-28 px-4 max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <span class="text-xs uppercase tracking-[0.25em] text-maroon font-bold">Destination Guide</span>
+      <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-charcoal font-normal mt-2 mb-4">
+        Venue &amp; Location
+      </h2>
+      <div class="w-16 h-0.5 bg-champagne mx-auto mb-4"></div>
+      <p class="text-charcoal-light text-sm">
+        We look forward to welcoming you to Fatema Community Centre for an unforgettable celebration.
+      </p>
+    </div>
+
+    <!-- Venue Card & Map Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+      
+      <!-- Left: Venue Info -->
+      <div class="lg:col-span-5 flex flex-col justify-between bg-white rounded-2xl p-6 sm:p-8 border border-champagne/40 shadow-sm reveal">
+        <div>
+          <div class="flex items-center gap-2 text-xs uppercase tracking-widest text-maroon font-bold mb-3">
+            <svg class="w-4 h-4 text-champagne" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            Wedding Reception Venue
+          </div>
+
+          <h3 class="font-serif text-2xl sm:text-3xl text-maroon font-bold">
+            Fatema Community Centre
+          </h3>
+          <p class="text-xs sm:text-sm text-charcoal-muted mt-2 font-mono">
+            Magura - Jashore Hwy, Magura 7600, Bangladesh
+          </p>
+
+          <div class="w-full h-px bg-champagne/30 my-6"></div>
+
+          <div class="space-y-4 text-xs sm:text-sm text-charcoal-light">
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 rounded-full bg-maroon-50 border border-maroon/20 flex items-center justify-center shrink-0 text-maroon mt-0.5">
+                🚗
+              </div>
+              <div>
+                <strong class="text-charcoal block font-semibold">Access &amp; Parking/ Dropoff Information</strong>
+                Conveniently located directly on the Magura - Jashore Highway with on-site guest parking. Rickshaw Distance from Vaina Mor Bus Stoppage.
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 rounded-full bg-maroon-50 border border-maroon/20 flex items-center justify-center shrink-0 text-maroon mt-0.5">
+                ✈️
+              </div>
+              <div>
+                <strong class="text-charcoal block font-semibold">Transit &amp; Accessibility</strong>
+                Approximately 35–45 minutes drive from Jashore Airport, and accessible directly from Dhaka via the Padma Bridge expressway. Available Bus: Golden Line, Shohag, Royal, Purbasha Paribahan from Saydabad, Jatrabari, Gulistan, Kallyanpur Counter [BDTICKETS Online].
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 rounded-full bg-maroon-50 border border-maroon/20 flex items-center justify-center shrink-0 text-maroon mt-0.5">
+                ⏰
+              </div>
+              <div>
+                <strong class="text-charcoal block font-semibold">Date &amp; Schedule</strong>
+                Saturday, December 26, 2026 at 2:00 PM
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-champagne/30 flex flex-col sm:flex-row gap-3">
+          <a
+            href="https://maps.app.goo.gl/5kRQBm8jHUVdCp9D7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-maroon text-white text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-maroon-light transition-all shadow-sm"
+          >
+            <svg class="w-4 h-4 text-champagne" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+            Open in Google Maps
+          </a>
+          <button
+            onclick="copyVenueAddress()"
+            class="px-4 py-3 border border-champagne bg-parchment text-charcoal text-xs font-medium rounded-xl hover:bg-champagne-50 transition-colors"
+          >
+            Copy Address
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Interactive Google Map -->
+      <div class="lg:col-span-7 bg-white rounded-2xl overflow-hidden border border-champagne/40 min-h-[350px] lg:min-h-full flex flex-col shadow-sm reveal">
+        <div class="p-3 bg-parchment-cream border-b border-champagne/30 flex items-center justify-between text-xs text-charcoal-muted">
+          <span class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+            Fatema Community Centre, Magura
+          </span>
+          <a href="https://maps.app.goo.gl/5kRQBm8jHUVdCp9D7" target="_blank" rel="noopener noreferrer" class="text-maroon font-semibold hover:underline">
+            View Live Route &rarr;
+          </a>
+        </div>
+        <div class="flex-1 w-full relative min-h-[320px]">
+          <iframe
+            title="Fatema Community Centre Map Location"
+            src="https://maps.google.com/maps?q=Fatema+Community+Centre+Magura+Jashore+Hwy+Magura+7600&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            class="absolute inset-0 w-full h-full border-0"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. Footer: Royal Velvet & Gold Finish -->
+  <footer class="bg-maroon-deep text-parchment py-16 px-4 border-t-2 border-champagne">
+    <div class="max-w-5xl mx-auto flex flex-col items-center text-center space-y-8">
+      
+      <!-- Monogram -->
+      <div class="w-16 h-16 rounded-full border-2 border-champagne flex items-center justify-center font-script text-3xl text-champagne-light bg-maroon shadow-gold-emboss">
+        S &amp; S
+      </div>
+
+      <!-- Couple's Names & Officiation -->
+      <div>
+
+        <p class="font-script text-2xl text-champagne-mirror mt-1">
+          Suzana Azad
+        </p>
+                <p class="font-script text-2xl text-champagne-mirror mt-1">
+          Mushfiqur Rahman Shovon
+        </p>
+        <p class="text-xs text-champagne-light tracking-[0.2em] uppercase mt-2">
+          Saturday, December 26, 2026 · 2:00 PM · Fatema Community Centre, Magura
+        </p>
+      </div>
+
+      <!-- Wedding Hashtag -->
+      <div class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-white/10 border border-champagne/40 text-champagne-light hover:border-champagne transition-all">
+        <span class="font-mono text-xs tracking-wider">#ShovonWedsSuzana</span>
+        <span class="text-champagne/40">·</span>
+        <span class="font-mono text-xs tracking-wider">#SuzanaxShovon</span>
+        <button
+          onclick="copyHashtag()"
+          title="Copy hashtag to clipboard"
+          class="text-xs text-white/80 hover:text-white uppercase font-bold pl-2 border-l border-white/20 transition-colors"
+        >
+          Copy
+        </button>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <nav class="flex flex-wrap items-center justify-center gap-6 text-xs uppercase tracking-widest text-parchment/70 pt-2">
+        <a href="#hero" class="hover:text-champagne transition-colors">Home</a>
+        <a href="#countdown" class="hover:text-champagne transition-colors">Countdown</a>
+        <a href="#venue" class="hover:text-champagne transition-colors">Venue &amp; Location</a>
+      </nav>
+
+      <!-- Du'a Quote in Footer -->
+      <div class="font-arabic text-xl sm:text-2xl text-champagne-light/90 pt-2">
+        بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+      </div>
+      <p class="text-xs italic font-serif text-parchment-sand/70 -mt-4">
+        “May Allah bless you and shower His blessings upon you, and bring you both together in goodness.”
+      </p>
+
+      <div class="w-24 h-px bg-champagne/30 my-4"></div>
+
+      <!-- Visitors Count & Back to Top -->
+      <div class="flex flex-col sm:flex-row items-center justify-between w-full text-xs text-parchment/50 gap-4 pt-2">
+        <span class="text-[11px] tracking-wider text-parchment/60 flex items-center gap-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
+          <span>Visitors Count: <strong id="visitorCount" class="font-mono text-champagne-light font-semibold">initVisitorCount()</strong></span>
+        </span>
+        <a href="#hero" class="inline-flex items-center gap-1.5 text-champagne hover:text-champagne-light transition-colors">
+          <span>Back to Top</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-maroon-deep text-white text-xs px-5 py-3 rounded-xl shadow-2xl border border-champagne flex items-center gap-2">
+    <span id="toastIcon">✨</span>
+    <span id="toastMsg">Notification</span>
+  </div>
+
+  <!-- Vanilla JavaScript Logic -->
+  <script>
+    // --- 0. Dynamic Visitor Counter Logic (Starting from 01) ---
+    (function initVisitorCount() {
+      const STORAGE_KEY = 'wedding_visitors_dynamic_count';
+      
+      // Clean up any legacy counter keys from previous versions
+      try {
+        localStorage.removeItem('wedding_visitor_count');
+        localStorage.removeItem('wedding_session_counted');
+      } catch (e) {}
+
+      // Format as 2-digit minimum ('01', '02', '03'...)
+      function formatCount(num) {
+        if (num < 10) return '0' + num;
+        return num.toLocaleString();
+      }
+
+      // Read current count or initialize to 1
+      let count = 1;
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        if (stored !== null) {
+          const parsed = parseInt(stored, 10);
+          if (!isNaN(parsed) && parsed >= 1) {
+            count = parsed + 1; // Increment dynamically on every visit / page reload
+          }
+        }
+        localStorage.setItem(STORAGE_KEY, count.toString());
+      } catch (e) {}
+
+      const counterEl = document.getElementById('visitorCount');
+      if (counterEl) {
+        counterEl.textContent = formatCount(count);
+      }
+
+      // Sync across open tabs in real-time
+      window.addEventListener('storage', (e) => {
+        if (e.key === STORAGE_KEY && e.newValue && counterEl) {
+          const newNum = parseInt(e.newValue, 10);
+          if (!isNaN(newNum)) {
+            counterEl.textContent = formatCount(newNum);
+          }
+        }
+      });
+    })();
+
+    // --- 1. Live Countdown Timer ---
+    // Target: Saturday, December 26, 2026 at 2:00 PM (14:00 Bangladesh Time: UTC+6)
+    const targetWeddingDate = new Date("2026-12-26T14:00:00+06:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = targetWeddingDate - now;
+
+      if (diff <= 0) {
+        document.getElementById('daysVal').textContent = "00";
+        document.getElementById('hoursVal').textContent = "00";
+        document.getElementById('minutesVal').textContent = "00";
+        document.getElementById('secondsVal').textContent = "00";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('daysVal').textContent = String(days).padStart(2, '0');
+      document.getElementById('hoursVal').textContent = String(hours).padStart(2, '0');
+      document.getElementById('minutesVal').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('secondsVal').textContent = String(seconds).padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // --- 2. Scroll Reveal via IntersectionObserver ---
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // --- 3. Mobile Navigation ---
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+    const closeIcon = document.getElementById('closeIcon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      if (isOpen) {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      } else {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+      }
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+
+    // --- 4. Add to Calendar Dropdown ---
+    const addToCalendarBtn = document.getElementById('addToCalendarBtn');
+    const calendarMenu = document.getElementById('calendarMenu');
+
+    addToCalendarBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      calendarMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!calendarMenu.contains(e.target) && e.target !== addToCalendarBtn) {
+        calendarMenu.classList.add('hidden');
+      }
+    });
+
+    // --- 5. ICS Generator ---
+    function generateIcs(title, startISO, endISO, location, desc) {
+      function formatDate(dStr) {
+        return dStr.replace(/[-:]/g, '') + 'Z';
+      }
+      return [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//Suzana & Mushfiqur Wedding//EN',
+        'CALSCALE:GREGORIAN',
+        'METHOD:PUBLISH',
+        'BEGIN:VEVENT',
+        'UID:' + Date.now() + '@wedding.shovon-suzana',
+        'DTSTAMP:' + formatDate(new Date().toISOString().replace(/\.\d{3}/, '')),
+        'DTSTART:20261226T080000Z',
+        'DTEND:20261226T140000Z',
+        'SUMMARY:' + title,
+        'DESCRIPTION:' + desc,
+        'LOCATION:' + location,
+        'STATUS:CONFIRMED',
+        'END:VEVENT',
+        'END:VCALENDAR'
+      ].join('\r\n');
+    }
+
+    document.getElementById('downloadIcsBtn').addEventListener('click', () => {
+      const ics = generateIcs(
+        "Suzana Azad & M. Mushfiqur Rahman (Shovon) Wedding Celebration",
+        "20261226T080000Z",
+        "20261226T140000Z",
+        "Fatema Community Centre, Magura - Jashore Hwy, Magura 7600",
+        "Wedding celebration of Suzana & Shovon. Date: Dec 26, 2026 at 2:00 PM."
+      );
+      downloadFile(ics, "shovon-suzana-wedding.ics", "text/calendar");
+      calendarMenu.classList.add('hidden');
+      showToast("Calendar invite downloaded!", "📅");
+    });
+
+    function downloadFile(content, fileName, mimeType) {
+      const blob = new Blob([content], { type: mimeType });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = fileName;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    // --- 6. Toast Utility ---
+    function showToast(message, icon = "✨") {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').textContent = message;
+      document.getElementById('toastIcon').textContent = icon;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3500);
+    }
+
+    function copyVenueAddress() {
+      const address = "Fatema Community Centre, Magura - Jashore Hwy, Magura 7600, Bangladesh";
+      navigator.clipboard.writeText(address).then(() => {
+        showToast("Venue address copied!", "📍");
+      }).catch(() => {
+        showToast("Fatema Community Centre, Magura", "📍");
+      });
+    }
+
+    function copyHashtag() {
+      navigator.clipboard.writeText("#ShovonWedsSuzana #SuzanaxShovon").then(() => {
+        showToast("Hashtags copied to clipboard!", "💍");
+      });
+    }
+
+    // --- 7. Web Audio API Ambient Melody ---
+    let audioCtx = null;
+    let isPlayingAudio = false;
+    let audioInterval = null;
+
+    const audioToggleBtn = document.getElementById('audioToggleBtn');
+    const audioIcon = document.getElementById('audioIcon');
+
+    const melodyNotes = [369.99, 415.30, 466.16, 554.37, 622.25, 739.99];
+
+    function playSoftChime(freq, duration = 1.6, delay = 0) {
+      if (!audioCtx) return;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(freq, audioCtx.currentTime + delay);
+
+      gain.gain.setValueAtTime(0.001, audioCtx.currentTime + delay);
+      gain.gain.exponentialRampToValueAtTime(0.08, audioCtx.currentTime + delay + 0.08);
+      gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + delay + duration);
+
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      osc.start(audioCtx.currentTime + delay);
+      osc.stop(audioCtx.currentTime + delay + duration);
+    }
+
+    function triggerMelodyPattern() {
+      const chord = [melodyNotes[0], melodyNotes[2], melodyNotes[3], melodyNotes[5]];
+      chord.forEach((freq, idx) => {
+        playSoftChime(freq, 2.0, idx * 0.45);
+      });
+    }
+
+    audioToggleBtn.addEventListener('click', () => {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+
+      if (isPlayingAudio) {
+        clearInterval(audioInterval);
+        isPlayingAudio = false;
+        audioIcon.textContent = '🎵';
+        audioToggleBtn.title = "Play ambient wedding melody";
+        showToast("Melody paused", "🔇");
+      } else {
+        isPlayingAudio = true;
+        audioIcon.textContent = '🎶';
+        audioToggleBtn.title = "Pause ambient wedding melody";
+        triggerMelodyPattern();
+        audioInterval = setInterval(triggerMelodyPattern, 4000);
+        showToast("Playing romantic ambient chime", "🎶");
+      }
+    });
+
+    // --- 8. Slow Continuous Love Emoji & Celebration Confetti Shower ---
+    const loveCanvas = document.getElementById('loveConfettiCanvas');
+    const loveCtx = loveCanvas.getContext('2d');
+
+    let canvasWidth = window.innerWidth;
+    let canvasHeight = window.innerHeight;
+
+    function resizeShowerCanvas() {
+      canvasWidth = window.innerWidth;
+      canvasHeight = window.innerHeight;
+      loveCanvas.width = canvasWidth;
+      loveCanvas.height = canvasHeight;
+    }
+    resizeShowerCanvas();
+    window.addEventListener('resize', resizeShowerCanvas);
+
+    // Curated romantic love emojis & celebratory symbols
+    const loveEmojis = ['❤️', '💖', '💕', '🌹', '✨', '💍', '🤍', '💫', '🌸', '🥰'];
+    
+    // Rich celebration colors: Champagne gold foil, royal velvet maroon, soft ivory, and rose
+    const celebrationColors = [
+      '#D4AF37', '#FFE68F', '#F5E4A2', '#E6C458', 
+      '#5A121D', '#800020', '#781A28', '#A62435', 
+      '#FAF6EE', '#FFFFFF', '#FFD1DC'
+    ];
+
+    let isShowerRunning = true;
+    const maxParticles = 70; // Plentiful yet silky smooth 60fps
+    const particles = [];
+
+    class SlowParticle {
+      constructor(customY) {
+        this.reset(customY);
+      }
+
+      reset(customY) {
+        this.x = Math.random() * canvasWidth;
+        this.y = customY !== undefined ? customY : -35 - Math.random() * 60;
+
+        // 55% Love Emoji, 45% Metallic Confetti ribbon / petal
+        this.isEmoji = Math.random() < 0.55;
+
+        if (this.isEmoji) {
+          this.emoji = loveEmojis[Math.floor(Math.random() * loveEmojis.length)];
+          this.size = Math.random() * 12 + 16; // 16px to 28px
+        } else {
+          this.color = celebrationColors[Math.floor(Math.random() * celebrationColors.length)];
+          this.width = Math.random() * 9 + 6;
+          this.height = Math.random() * 14 + 6;
+          this.shape = Math.random() < 0.65 ? 'rect' : 'circle';
+        }
+
+        // Falling gently and slowly across the screen
+        this.vy = Math.random() * 0.75 + 0.6; // 0.6px to 1.35px per frame (slow & graceful)
+
+        // Organic horizontal drift & gentle sine sway
+        this.swayAngle = Math.random() * Math.PI * 2;
+        this.swaySpeed = Math.random() * 0.02 + 0.012;
+        this.swayAmp = Math.random() * 1.4 + 0.6;
+
+        // 3D rotation & flutter
+        this.rotation = Math.random() * Math.PI * 2;
+        this.rotationSpeed = (Math.random() - 0.5) * 0.035;
+
+        this.tilt = Math.random() * Math.PI;
+        this.tiltSpeed = Math.random() * 0.025 + 0.012;
+
+        // Depth perception with gentle opacity
+        this.opacity = Math.random() * 0.4 + 0.55; // 0.55 to 0.95
+      }
+
+      update() {
+        this.y += this.vy;
+        this.swayAngle += this.swaySpeed;
+        this.x += Math.sin(this.swayAngle) * this.swayAmp;
+
+        this.rotation += this.rotationSpeed;
+        this.tilt += this.tiltSpeed;
+
+        // Seamless recycle when passing bottom
+        if (this.y > canvasHeight + 40) {
+          this.reset(-25);
+        }
+        // Wrap horizontal edges
+        if (this.x < -40) this.x = canvasWidth + 30;
+        if (this.x > canvasWidth + 40) this.x = -30;
+      }
+
+      draw(ctx) {
+        ctx.save();
+        ctx.globalAlpha = this.opacity;
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.rotation);
+
+        if (this.isEmoji) {
+          ctx.font = `${Math.floor(this.size)}px "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif`;
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(this.emoji, 0, 0);
+        } else {
+          ctx.fillStyle = this.color;
+          const cosTilt = Math.cos(this.tilt);
+          if (this.shape === 'rect') {
+            ctx.fillRect(-this.width / 2, (-this.height * cosTilt) / 2, this.width, this.height * Math.abs(cosTilt));
+          } else {
+            ctx.beginPath();
+            ctx.ellipse(0, 0, this.width / 2, (this.height / 2) * Math.abs(cosTilt), 0, 0, Math.PI * 2);
+            ctx.fill();
+          }
+        }
+        ctx.restore();
+      }
+    }
+
+    // Distribute particles across the viewport on initial page load
+    for (let i = 0; i < maxParticles; i++) {
+      particles.push(new SlowParticle(Math.random() * canvasHeight));
+    }
+
+    function animateLoveShower() {
+      loveCtx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+      if (isShowerRunning) {
+        for (let i = 0; i < particles.length; i++) {
+          particles[i].update();
+          particles[i].draw(loveCtx);
+        }
+      }
+
+      requestAnimationFrame(animateLoveShower);
+    }
+    requestAnimationFrame(animateLoveShower);
+
+    // Shower Toggle Button Logic
+    const showerToggleBtn = document.getElementById('showerToggleBtn');
+    const showerIcon = document.getElementById('showerIcon');
+
+    showerToggleBtn.addEventListener('click', () => {
+      isShowerRunning = !isShowerRunning;
+      if (isShowerRunning) {
+        showerIcon.textContent = '💖';
+        showerToggleBtn.title = "Pause love & confetti shower";
+        showToast("Love & celebration shower resumed 💕", "💖");
+      } else {
+        loveCtx.clearRect(0, 0, canvasWidth, canvasHeight);
+        showerIcon.textContent = '🤍';
+        showerToggleBtn.title = "Play love & confetti shower";
+        showToast("Love shower paused", "🤍");
+      }
+    });
+
+    // Interactive Tap / Click: Spawns gentle cluster of love hearts that float upward
+    window.addEventListener('click', (e) => {
+      // Don't trigger on interactive elements
+      if (e.target.closest('button') || e.target.closest('a') || e.target.closest('input')) return;
+
+      for (let i = 0; i < 8; i++) {
+        const burst = new SlowParticle(e.clientY + (Math.random() * 20 - 10));
+        burst.x = e.clientX + (Math.random() * 30 - 15);
+        burst.vy = -(Math.random() * 1.5 + 0.8); // gentle upward float
+        burst.opacity = 1;
+        particles.push(burst);
+
+        setTimeout(() => {
+          const idx = particles.indexOf(burst);
+          if (idx > -1) particles.splice(idx, 1);
+        }, 3800);
+      }
+    });
+  </script>
+</body>
+</html>
