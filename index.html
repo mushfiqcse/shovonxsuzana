@@ -555,12 +555,8 @@
 
       <div class="w-24 h-px bg-champagne/30 my-4"></div>
 
-      <!-- Visitors Count & Back to Top -->
-      <div class="flex flex-col sm:flex-row items-center justify-between w-full text-xs text-parchment/50 gap-4 pt-2">
-        <span class="text-[11px] tracking-wider text-parchment/60 flex items-center gap-2">
-          <span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
-          <span>Visitors Count: <strong id="visitorCount" class="font-mono text-champagne-light font-semibold">initVisitorCount()</strong></span>
-        </span>
+      <!-- Back to Top -->
+      <div class="flex items-center justify-end w-full text-xs text-parchment/50 pt-2">
         <a href="#hero" class="inline-flex items-center gap-1.5 text-champagne hover:text-champagne-light transition-colors">
           <span>Back to Top</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -580,51 +576,6 @@
 
   <!-- Vanilla JavaScript Logic -->
   <script>
-    // --- 0. Dynamic Visitor Counter Logic (Starting from 01) ---
-    (function initVisitorCount() {
-      const STORAGE_KEY = 'wedding_visitors_dynamic_count';
-      
-      // Clean up any legacy counter keys from previous versions
-      try {
-        localStorage.removeItem('wedding_visitor_count');
-        localStorage.removeItem('wedding_session_counted');
-      } catch (e) {}
-
-      // Format as 2-digit minimum ('01', '02', '03'...)
-      function formatCount(num) {
-        if (num < 10) return '0' + num;
-        return num.toLocaleString();
-      }
-
-      // Read current count or initialize to 1
-      let count = 1;
-      try {
-        const stored = localStorage.getItem(STORAGE_KEY);
-        if (stored !== null) {
-          const parsed = parseInt(stored, 10);
-          if (!isNaN(parsed) && parsed >= 1) {
-            count = parsed + 1; // Increment dynamically on every visit / page reload
-          }
-        }
-        localStorage.setItem(STORAGE_KEY, count.toString());
-      } catch (e) {}
-
-      const counterEl = document.getElementById('visitorCount');
-      if (counterEl) {
-        counterEl.textContent = formatCount(count);
-      }
-
-      // Sync across open tabs in real-time
-      window.addEventListener('storage', (e) => {
-        if (e.key === STORAGE_KEY && e.newValue && counterEl) {
-          const newNum = parseInt(e.newValue, 10);
-          if (!isNaN(newNum)) {
-            counterEl.textContent = formatCount(newNum);
-          }
-        }
-      });
-    })();
-
     // --- 1. Live Countdown Timer ---
     // Target: Saturday, December 26, 2026 at 2:00 PM (14:00 Bangladesh Time: UTC+6)
     const targetWeddingDate = new Date("2026-12-26T14:00:00+06:00").getTime();
